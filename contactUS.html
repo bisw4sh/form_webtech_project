@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact us</title>
+  <script src="https://kit.fontawesome.com/cf219fd6cf.js" crossorigin="anonymous"></script>
+  <script src="contactUSformvalidation.js"></script>
+  <link defer rel="stylesheet" href="contactUS.css" type="text/css">
+  </head>
+  
+  <body>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div id="error"></div>
+      <form class="form" id="form" action="contactform.php" method="POST">
+  
+        <p class="username">
+          <input type="text" name="name" id="name" placeholder="Enter your name" required>
+          <label for="name"><i class="fas fa-portrait" alt = "Name"></i></label>
+        </p>
+  
+        <p class="useremail">
+          <input type="text" name="email" id="email" placeholder="mail@example.com">
+          <label for="email"><i class="fas fa-envelope-square" alt = "Mail"></i></label>
+        </p>
+  
+        <p class="usercontact">
+          <input type="text" name="contact" id="contact" placeholder="contact number" required>
+          <label for="contact"><i class="fas fa-phone" alt = "Call"></i></label>
+        </p>
+  
+        <p class="usertext">
+          <textarea name="text" placeholder="Tell about your visit & queries"></textarea>
+          <label for="text"><i class="fas fa-comments" alt = "Text"></i></label>
+        </p>
+  
+        <p class="usersubmit">
+          <input type="submit" name="submit" value="Send">
+        </p>
+      </form>
+    </div>
+  </body>
+  
+  </html>
